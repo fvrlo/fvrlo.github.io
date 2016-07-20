@@ -341,6 +341,7 @@ button {
     float: left;
     padding-left: .9375rem;
     padding-right: .9375rem
+    text-align: center;
 }
 .column:last-child,
 .columns:last-child {
@@ -1142,6 +1143,7 @@ ul {
 }
 p {
     font-size: inherit
+	text-align: center
 }
 h1,
 h2,
@@ -1181,13 +1183,16 @@ h3 {
     font-size: 1.1875rem
 }
 h4 {
-    font-size: 1.125rem
+    font-size: 1rem;
+	text-align: center
 }
 h5 {
     font-size: 1.0625rem
 }
 h6 {
-    font-size: 1rem
+    font-size: 1rem;
+	text-align: center;
+	margin-left: 2rem
 }
 @media screen and (min-width: 40em) {
     h1 {
@@ -1200,7 +1205,7 @@ h6 {
         font-size: 1.9375rem
     }
     h4 {
-        font-size: 1.5625rem
+        font-size: 1rem
     }
     h5 {
         font-size: 1.25rem
