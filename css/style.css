@@ -480,6 +480,10 @@ h2.style{
 	line-height: 1.8em;
 	color: #323232;
 }
+.parafloat {
+	margin: 30px;
+	display: inline-block;
+}
 .blog_left{
 	display: block;
 }
