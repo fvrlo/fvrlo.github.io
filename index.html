@@ -1,4 +1,107 @@
-<doc type html>
-<body>
-Coming soon. -@FuryOS
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>ADVENTURES IN DATA</b></h1>
+  <p>A small blog where Matt explores <span class="w3-tag">data science</span> and other stuff he doesn't get.</p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h3><b>Songs are dumb.</b></h3>
+      <h5>Something about graphs and subscriptions on <span class="w3-opacity">November 2, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Today, I discovered that sleeping in until 2pm is not as fun as it sounds. <br><br>
+		It's tiring for the day and makes 5pm feel like noon. Breakfast is thrown off. Either way, it has it's "reasons". Last night, I had the idea to make a "best of 2018" music video based off of my Spotify listening habits. Innocent idea, but of course things never are.<br><br>
+		How would one figure out what songs were released in 2018 versus added to my collection within the year? Soptify tracks it, but the only time-based sorting is when it was added to the playlist or length. So, to the internet! Spotify API has this nifty feature of letting you grab data as you need it, with some limits. Notable data available is BPM, artist/album art, and the actual data of a song. To access, I had to register as a Spotify Dev and get client keys and such, a surprisingly little amount of work. My issue is a lack of work environments or whatever. Bash? Install, I guess. Node.js? Sure, whatever it is. Python? Fuck Python. I hate you, you weasly code program. 3.0 it is.<br><br>
+		There's a hard limit on data retrieval from the API, so any mass retrieval was out of the question. (My library is 3.5k songs, a mere blink to the pros but more than the average user.) Even if I did request such data, how would I save it and sort it from JSON? Googling led me to a nifty site called http://playlistmachinery.com/. Specifically, the http://organizeyourmusic.playlistmachinery.com tool. It's a nice little scanner for library/playlist data and gives it to you in a nice presentation. I set it up for my entire library (and wow did it slow my PC, 8GB is not enough) with some direction to certain genres being highlighted.
+	  </p>
+	  <img src="img/newplot.png" alt="Cool! Kinda." style="width:100%">
+	  <p>
+		I have no idea what I had unloaded onto myself.<br><br>
+		Earlier in my life, in ye olde middle school, I had discovered through an imgur gallery some cool web-tools. One of them was the <a href="http://infinitejukebox.playlistmachinery.com/">Infinite Jukebox</a>.
+	  </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button onclick="window.location.href='whereever'" class="w3-button w3-padding-large w3-white w3-border"><b>Source of that thing</b></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  
+  
+  Example post formatting to get it right next time. Thanks w3!
+  
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="none" alt="" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOG ENTRY</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button onclick="window.location.href='whereever'" class="w3-button w3-padding-large w3-white w3-border"><b>Source of that thing</b></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  -->
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>About</b></h4>
+      <p>Science and art are mutually dumb at points, but I'll like them either way. Movies, art, point clouds and the stupid tangents I make are plenty here in this land of undergrad slacking. I'm on Twitter at <a href="http://www.twitter.com/furyos_">@FuryOS_<a>, so look for more ramblings there if I abandon this page.</p>
+    </div>
+  </div><hr>
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> because i'm lazy in the case of html.</p>
+</footer>
+
 </body>
+</html>
