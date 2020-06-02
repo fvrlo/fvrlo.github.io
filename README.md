@@ -1,2 +1,0 @@
-# ihazfury.github.io
-Fun.
