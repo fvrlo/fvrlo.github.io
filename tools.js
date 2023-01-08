@@ -75,6 +75,13 @@ function listgen() {
 		linky: "Moonfall",
 		post: " Enjoyers Club"
 		};
+	var hive_link = {
+		link: "https://www.hivesocial.app/",
+		src: "https://uploads-ssl.webflow.com/618d8cc95512a6012b8ba50d/6192f1caee35e0734ebc469e_256.png",
+		pre: "In the bee",
+		linky: "hive",
+		post: " at @fvrlo"
+		};
 	var twitter_link = {
 		link: "https://twitter.com/matt_fvrlo",
 		src: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxvZ28iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNDggMjA0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNDggMjA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzFEOUJGMDt9Cjwvc3R5bGU+CjxnIGlkPSJMb2dvXzFfIj4KCTxwYXRoIGlkPSJ3aGl0ZV9iYWNrZ3JvdW5kIiBjbGFzcz0ic3QwIiBkPSJNMjIxLjk1LDUxLjI5YzAuMTUsMi4xNywwLjE1LDQuMzQsMC4xNSw2LjUzYzAsNjYuNzMtNTAuOCwxNDMuNjktMTQzLjY5LDE0My42OXYtMC4wNAoJCUM1MC45NywyMDEuNTEsMjQuMSwxOTMuNjUsMSwxNzguODNjMy45OSwwLjQ4LDgsMC43MiwxMi4wMiwwLjczYzIyLjc0LDAuMDIsNDQuODMtNy42MSw2Mi43Mi0yMS42NgoJCWMtMjEuNjEtMC40MS00MC41Ni0xNC41LTQ3LjE4LTM1LjA3YzcuNTcsMS40NiwxNS4zNywxLjE2LDIyLjgtMC44N0MyNy44LDExNy4yLDEwLjg1LDk2LjUsMTAuODUsNzIuNDZjMC0wLjIyLDAtMC40MywwLTAuNjQKCQljNy4wMiwzLjkxLDE0Ljg4LDYuMDgsMjIuOTIsNi4zMkMxMS41OCw2My4zMSw0Ljc0LDMzLjc5LDE4LjE0LDEwLjcxYzI1LjY0LDMxLjU1LDYzLjQ3LDUwLjczLDEwNC4wOCw1Mi43NgoJCWMtNC4wNy0xNy41NCwxLjQ5LTM1LjkyLDE0LjYxLTQ4LjI1YzIwLjM0LTE5LjEyLDUyLjMzLTE4LjE0LDcxLjQ1LDIuMTljMTEuMzEtMi4yMywyMi4xNS02LjM4LDMyLjA3LTEyLjI2CgkJYy0zLjc3LDExLjY5LTExLjY2LDIxLjYyLTIyLjIsMjcuOTNjMTAuMDEtMS4xOCwxOS43OS0zLjg2LDI5LTcuOTVDMjQwLjM3LDM1LjI5LDIzMS44Myw0NC4xNCwyMjEuOTUsNTEuMjl6Ii8+CjwvZz4KPC9zdmc+Cg==",
@@ -117,7 +124,7 @@ function listgen() {
 		linky: "my",
 		post: " coding hub."
 		};
-	var megalist = [discord_link, twitter_link, letterbox_link, insta_link, youtube_link, spotify_link, github_link];
+	var megalist = [discord_link, twitter_link, hive_link, letterbox_link, insta_link, youtube_link, spotify_link, github_link];
 	let table = document.createElement('table');
 	for (let i = 0; i < megalist.length; i++) {
 		var diction = [, "</p>", "<img class='social' src='", "' />"];
@@ -126,7 +133,6 @@ function listgen() {
 		let row_data_2 = document.createElement('td');
 		let row_data_3 = document.createElement('td');
 		let row_data_4 = document.createElement('td');
-		
 		row_data_1.setAttribute("class", "o1");
 		row_data_1.innerHTML = "";
 		row_data_2.setAttribute("class", "o2");
@@ -135,7 +141,6 @@ function listgen() {
 		row_data_3.innerHTML = diction[2] + megalist[i].src + diction[3];
 		row_data_4.setAttribute("class", "o4");
 		row_data_4.innerHTML = "";
-	
 		row.appendChild(row_data_1);
 		row.appendChild(row_data_2);
 		row.appendChild(row_data_3);
