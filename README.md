@@ -1,7 +1,2 @@
-# mattfvrlo.github.io
-Website
-
-
-
-
+# fvrlo.github.io
 GitHub Pages frontend to moonfall.fervinrulo.com
